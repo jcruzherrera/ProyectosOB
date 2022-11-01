@@ -1,13 +1,13 @@
 public class Main {
     public static void main(String[] args) {
 
-        int numero = 2;
+        int numeroIf = 0;
 
         //Usando un if, crear una condición que compare si la variable numeroIf es positivo, negativo, o 0.
-        if (numero > 0) {
+        if (numeroIf > 0) {
             System.out.println("[IF] La variable numero es positiva");
         }
-        else if (numero < 0) {
+        else if (numeroIf < 0) {
             System.out.println("[IF]La variable numero es negativa");
         }
         else {
@@ -20,15 +20,17 @@ public class Main {
             Mostrarlo por pantalla cada vez que se ejecute.
         */
 
-        while (numero < 3) {
-            numero++;
-            System.out.println("[WHILE] La variable numero es %d".formatted(numero));
+        int numeroWhile = 0;
+        while (numeroWhile < 3) {
+            numeroWhile++;
+            System.out.println("[WHILE] La variable numero es %d".formatted(numeroWhile));
         }
 
+        int numeroDoWhile = 0;
         do {
-            numero++;
-            System.out.println("[DO-WHILE] La variable numero es %d".formatted(numero));
-        } while (numero < numero-1);
+            numeroDoWhile++;
+            System.out.println("[DO-WHILE] La variable numero es %d".formatted(numeroDoWhile));
+        } while (numeroDoWhile < numeroDoWhile-1);
 
         /*
             Para el bucle For, crea una variable numeroFor, esta variable tendrá como valor 0
@@ -36,8 +38,9 @@ public class Main {
             y deberá mostrarse por pantalla.
         */
         //for(int numero = 0; numero <= 3; numero++) {
-        for(numero = 0; numero <= 3; numero++) {
-            System.out.println("[FOR] La variable numero es %d".formatted(numero));
+
+        for(int numeroFor = 0; numeroFor <= 3; numeroFor++) {
+            System.out.println("[FOR] La variable numero es %d".formatted(numeroFor));
         }
         /*
             Por último, para el Switch, deberás crear la variable estacion,
